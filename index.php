@@ -34,23 +34,23 @@
     
         <form action="envio.php" enctype="multipart/form-data" method="post">
             <div class="inputs">
-                <input type="text" name="name" placeholder="Ingresá tu Nombre" required=""=>
-                <input type="number" name="cedula" placeholder="Ingresá tu Cédula" required=""=>
+                <input type="text" name="name" placeholder="Ingresá tu Nombre" required="" data-aos="fade-up">
+                <input type="number" name="cedula" placeholder="Ingresá tu Cédula" required="" data-aos="fade-up">
             </div>
             
             <div class="files">
-                <div class="inputfile">
+                <div class="inputfile" data-aos="fade-up">
                     <img src="assets/cedula-front.png" alt="" class="showimginput">
-                    <input type="file" name="anverso" class="inputimg" required=""=>
+                    <input type="file" name="anverso" class="inputimg" required="" >
                 </div>
 
-                <div class="inputfile">
+                <div class="inputfile" data-aos="fade-up">
                     <img src="assets/cedula-back.png" alt="" class="showimginput">
-                    <input type="file" name="reverso" class="inputimg" required=""=>
+                    <input type="file" name="reverso" class="inputimg" required="">
                 </div>
             </div>
             
-            <input type="submit" name="enviar" value="Enviar">
+            <input type="submit" name="enviar" value="Enviar" data-aos="fade-up">
         </form>
     </div>
 
