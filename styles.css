@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open sans",sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+main{
+    width: 100%;
+
+    background: linear-gradient(rgba(238, 46, 56, 0.973), rgb(236, 131, 131));
+
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.b-wrapper, .f-wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}   
+
+header svg{
+    width: 150px;
+    fill: white;
+}
+
+header .info{
+    width: 300px;
+}
+
+main h1{
+    font-size: 46px;
+    letter-spacing: 2px;
+    font-family: 'Francois One', sans-serif;
+    color: white;
+}
+
+.adv{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.f-wrapper{
+    padding: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-wrapper form{
+    width: 70%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.f-wrapper form .inputs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-wrapper form .files{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.f-wrapper form input[type="text"],
+.f-wrapper form input[type="number"]{
+    width: 400px;
+    height: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid red;
+    text-align: center;
+}
+
+.f-wrapper form input[type="submit"]{
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 2px solid red;
+    background: white;
+    color:red;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.f-wrapper form input[type="submit"]:hover{
+    background: red;
+    color: white;
+}
+
+.f-wrapper form .inputfile{
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 170px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-wrapper form .inputfile img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.f-wrapper form .inputfile input{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.response{
+    width: 100%;
+    min-height: calc(90vh - 201px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.response img{
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 520px) {
+    main h1 {
+        font-size: 36px;
+    }
+
+    .adv {
+        margin-top: 20px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    header .info {
+        width: 220px;
+    }
+
+    .f-wrapper form {
+        width: 90%;
+    }
+
+    .response img {
+        width: 130px;
+    }
+
+    .con-s{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    main {
+        padding-bottom: 30px;
+    }
+}
